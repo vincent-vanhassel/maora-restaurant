@@ -1,11 +1,9 @@
 <template>
   <SectionLayout
     id="botanique"
-    title="Botanique"
-    description="UNE CUISINE AVENTUREUSE"
-    text="Animés par notre passion pour la cuisine et notamment les mélanges de saveurs, nous avions à coeur de créer une carte originale et savoureuse  en travaillant uniquement des produits végétaux et de saison afin d'offrir nos convives une gastronomie botanique audacieuse et gourmande.
- 
-    Forts de nos trois parcours complémentaires, et après plusieurs mois de travail, réflexion mais surtout d'amusement et de rire où les cuisines françaises et asiatiques furent nos muses : Maora est né." 
+    :title="$t('botanique.title')"
+    :description="$t('botanique.description')"
+    :text="$t('botanique.text')"
     img-src="/botanique-image.jpeg"
     img-alt="Plat végétal signature"
     :index="index"
@@ -21,4 +19,5 @@
 
 <script setup>
 import SectionLayout from './SectionLayout.vue'
+defineProps({ index: Number })
 </script>

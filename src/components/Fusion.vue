@@ -1,11 +1,9 @@
 <template>
   <SectionLayout
     id="fusion"
-    title="Fusion"
-    description="Nos Objectifs"
-    text="Avec Maora, au-delà de ravir les papilles de nos clients, nous souhaitions leur proposer une carte respectueuse autant de son environnement que du monde animal. 
-
-    Ainsi nous avons fait le choix de n'utiliser que des produits d'origine végétale, de saison et récoltés le plus localement possible."
+    :title="$t('fusion.title')"
+    :description="$t('fusion.description')"
+    :text="$t('fusion.text')"
     img-src="/fusion-image.jpeg"
     img-alt="Plat végétal signature"
     :index="index"
@@ -21,4 +19,5 @@
 
 <script setup>
 import SectionLayout from './SectionLayout.vue'
+defineProps({ index: Number })
 </script>

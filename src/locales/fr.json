@@ -1,24 +1,53 @@
 {
-  "nav": {
-    "menu": "CARTE & MENU",
-    "home": "ACCUEIL",
-    "about": "A PROPOS",
-    "book": "RESERVER",
-    "collect": "CLICK & COLLECT"
+  "navbar": {
+    "menu": "Carte & Menu",
+    "about": "À propos",
+    "book": "Réserver",
+    "collect": "Click & Collect",
+    "home": "Accueil"
   },
+
+  "botanique": {
+    "title": "Botanique",
+    "description": "UNE CUISINE AVENTUREUSE",
+    "text": "Animés par notre passion pour la cuisine et notamment les mélanges de saveurs, nous avions à cœur de créer une carte originale et savoureuse en travaillant uniquement des produits végétaux et de saison afin d'offrir à nos convives une gastronomie botanique audacieuse et gourmande. Forts de nos trois parcours complémentaires, et après plusieurs mois de travail, réflexion mais surtout d'amusement et de rire où les cuisines françaises et asiatiques furent nos muses : Maora est né."
+  },
+
+  "fusion": {
+    "title": "Fusion",
+    "description": "Nos Objectifs",
+    "text": "Avec Maora, au-delà de ravir les papilles de nos clients, nous souhaitions leur proposer une carte respectueuse autant de son environnement que du monde animal. Ainsi nous avons fait le choix de n'utiliser que des produits d'origine végétale, de saison et récoltés le plus localement possible."
+  },
+
+  "about": {
+    "title": "Maora",
+    "subtitle1": "Une cuisine aventureuse",
+    "text1": "Animés par notre passion pour la cuisine et notamment les mélanges de saveurs, nous avions à coeur de créer une carte originale et savoureuse en travaillant uniquement des produits végétaux et de saison afin d'offrir à nos convives une gastronomie botanique audacieuse et gourmande. Forts de nos trois parcours complémentaires, et après plusieurs mois de travail, réflexion mais surtout d'amusement et de rire où les cuisines françaises et asiatiques furent nos muses : Maora est né.",
+    "subtitle2": "Nos objectifs",
+    "text2": "Avec Maora, au-delà de ravir les papilles de nos clients, nous souhaitions leur proposer une carte respectueuse autant de son environnement que du monde animal. Ainsi nous avons fait le choix de n'utiliser que des produits d'origine végétale, de saison et récoltés le plus localement possible.",
+    "imgAlt": "Illustration Maora"
+  },
+
   "footer": {
-    "contact": "NOUS CONTACTER",
-    "address": "ADRESSE",
-    "hours": "HORAIRES D’OUVERTURE",
-    "copyright": "&copy; {year} Maora. Tous droits réservés.",
-    "motto": "From the future, for the present.",
-    "instagram": "INSTAGRAM"
-  },
-  "sections": {
-    "botanique": {
-      "title": "Botanique",
-      "description": "UNE CUISINE AVENTUREUSE",
-      "text": "Animés par notre passion pour la cuisine et notamment les mélanges de saveurs, nous avions à coeur de créer une carte originale et savoureuse en travaillant uniquement des produits végétaux et de saison afin d'offrir nos convives une gastronomie botanique audacieuse et gourmande.\n\nForts de nos trois parcours complémentaires, et après plusieurs mois de travail, réflexion mais surtout d’amusement et de rire où les cuisines françaises et asiatiques furent nos muses : Maora est né."
+    "contact": {
+      "title": "Nous contacter",
+      "phone": "+33 1 40 57 00 22",
+      "email": "contact@maorarestaurants.com"
+    },
+    "address": {
+      "title": "Adresse",
+      "line1": "61 rue des Dames",
+      "line2": "75017 · Paris"
+    },
+    "hours": {
+      "title": "Horaires d’ouverture",
+      "line1": "Tous les jours de 12.00 à 14h30 et de 19.00 à 22.30",
+      "line2": "La cuisine ferme à 14.00 et 22.00"
+    },
+    "bottom": {
+      "instagram": "Instagram",
+      "rights": "Tous droits réservés.",
+      "slogan": "From the future, for the present."
     }
   }
 }

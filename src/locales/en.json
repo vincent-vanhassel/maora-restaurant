@@ -1,24 +1,53 @@
 {
-  "nav": {
-    "menu": "MENU",
-    "home": "HOME",
-    "about": "ABOUT",
-    "book": "BOOK",
-    "collect": "CLICK & COLLECT"
+  "navbar": {
+    "menu": "Menu",
+    "about": "About",
+    "book": "Book",
+    "collect": "Click & Collect",
+    "home": "Home"
   },
+
+  "botanique": {
+    "title": "botanical",
+    "description": "AN ADVENTUROUS CUISINE",
+    "text": "Driven by our passion for cooking and especially the blending of flavors, we were eager to create an original and tasty menu using only plant-based and seasonal ingredients to offer our guests a bold and gourmet botanical gastronomy. With our three complementary backgrounds, and after several months of work, reflection, and above all fun and laughter—where French and Asian cuisines were our muses—Maora was born."
+  },
+
+  "fusion": {
+    "title": "Fusion",
+    "description": "Our Goals",
+    "text": "With Maora, beyond delighting our customers’ palates, we wanted to offer a menu that respects both the environment and animal life.That's why we chose to use only plant-based, seasonal ingredients sourced as locally as possible."
+  },
+
+  "about": {
+    "title": "Maora",
+    "subtitle1": "An adventurous cuisine",
+    "text1": "Driven by our passion for cooking and especially the blend of flavors, we aimed to create an original and tasty menu using only plant-based, seasonal ingredients, to offer our guests bold and gourmet botanical gastronomy. With our three complementary backgrounds, and after months of work, reflection — but above all fun and laughter — where French and Asian cuisines inspired us: Maora was born.",
+    "subtitle2": "Our Goals",
+    "text2": "With Maora, beyond delighting our clients' palates, we wanted to offer a menu that respects both the environment and animal welfare. That’s why we chose to use only plant-based, seasonal ingredients, harvested as locally as possible.",
+    "imgAlt": "Illustration Maora"
+  },
+  
   "footer": {
-    "contact": "CONTACT US",
-    "address": "ADDRESS",
-    "hours": "OPENING HOURS",
-    "copyright": "&copy; {year} Maora. All rights reserved.",
-    "motto": "From the future, for the present.",
-    "instagram": "INSTAGRAM"
-  },
-  "sections": {
-    "botanique": {
-      "title": "Botanical",
-      "description": "A DARING CUISINE",
-      "text": "Driven by our passion for cooking and especially for flavor combinations, we were eager to create an original and flavorful menu, working exclusively with plant-based and seasonal products to offer our guests bold and gourmet botanical gastronomy.\n\nWith our three complementary backgrounds, and after several months of work, reflection but mostly fun and laughter, where French and Asian cuisines were our muses: Maora was born."
+    "contact": {
+      "title": "Contact us",
+      "phone": "+33 1 40 57 00 22",
+      "email": "contact@maorarestaurants.com"
+    },
+    "address": {
+      "title": "Address",
+      "line1": "61 rue des Dames",
+      "line2": "75017 · Paris"
+    },
+    "hours": {
+      "title": "Opening hours",
+      "line1": "Every day from 12:00 to 14:30 and from 19:00 to 22:30",
+      "line2": "Kitchen closes at 14:00 and 22:00"
+    },
+    "bottom": {
+      "instagram": "Instagram",
+      "rights": "All rights reserved.",
+      "slogan": "From the future, for the present."
     }
   }
 }
