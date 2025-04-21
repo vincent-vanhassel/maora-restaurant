@@ -1,6 +1,6 @@
-# 🛡️ TokenDesk – Site Vitrine
+# 🛡️ Maora – Site Vitrine
 
-Interface de présentation de la solution **TokenDesk**, dédiée à la tokenisation confidentielle d’actifs financiers pour les institutions.
+Interface de présentation de la solution **Maora**, dédiée à la tokenisation confidentielle d’actifs financiers pour les institutions.
 
 ---
 
@@ -57,9 +57,3 @@ src/
 ├─ App.vue             # Composition de la page
 ├─ main.js             # Entry point
 ```
-
----
-
-## 📩 Contact
-
-> Pour toute modification ou suggestion, contactez `team@blockchain-xpertise.com`.
