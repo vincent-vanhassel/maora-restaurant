@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@import './assets/fonts.css';
+
+@theme {
+  --font-jost: "Jost", "sans-serif";
+  --font-cormorant: "Cormorant", "sans-serif";
+
+  --color-main-color: #4E4934;
+  --color-text-color: #f9f9f2;
+}

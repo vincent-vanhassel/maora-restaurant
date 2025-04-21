@@ -1,0 +1,24 @@
+{
+  "nav": {
+    "menu": "MENU",
+    "home": "HOME",
+    "about": "ABOUT",
+    "book": "BOOK",
+    "collect": "CLICK & COLLECT"
+  },
+  "footer": {
+    "contact": "CONTACT US",
+    "address": "ADDRESS",
+    "hours": "OPENING HOURS",
+    "copyright": "&copy; {year} Maora. All rights reserved.",
+    "motto": "From the future, for the present.",
+    "instagram": "INSTAGRAM"
+  },
+  "sections": {
+    "botanique": {
+      "title": "Botanical",
+      "description": "A DARING CUISINE",
+      "text": "Driven by our passion for cooking and especially for flavor combinations, we were eager to create an original and flavorful menu, working exclusively with plant-based and seasonal products to offer our guests bold and gourmet botanical gastronomy.\n\nWith our three complementary backgrounds, and after several months of work, reflection but mostly fun and laughter, where French and Asian cuisines were our muses: Maora was born."
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "nav": {
+    "menu": "CARTE & MENU",
+    "home": "ACCUEIL",
+    "about": "A PROPOS",
+    "book": "RESERVER",
+    "collect": "CLICK & COLLECT"
+  },
+  "footer": {
+    "contact": "NOUS CONTACTER",
+    "address": "ADRESSE",
+    "hours": "HORAIRES D’OUVERTURE",
+    "copyright": "&copy; {year} Maora. Tous droits réservés.",
+    "motto": "From the future, for the present.",
+    "instagram": "INSTAGRAM"
+  },
+  "sections": {
+    "botanique": {
+      "title": "Botanique",
+      "description": "UNE CUISINE AVENTUREUSE",
+      "text": "Animés par notre passion pour la cuisine et notamment les mélanges de saveurs, nous avions à coeur de créer une carte originale et savoureuse en travaillant uniquement des produits végétaux et de saison afin d'offrir nos convives une gastronomie botanique audacieuse et gourmande.\n\nForts de nos trois parcours complémentaires, et après plusieurs mois de travail, réflexion mais surtout d’amusement et de rire où les cuisines françaises et asiatiques furent nos muses : Maora est né."
+    }
+  }
+}
