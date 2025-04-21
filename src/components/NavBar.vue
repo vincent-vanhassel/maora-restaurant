@@ -1,6 +1,6 @@
 <template>
   <nav class="fixed top-0 left-0 w-full z-50 bg-main-color text-white shadow-md">
-    <div class="max-w-7xl mx-auto w-full px-4 py-6 flex items-center justify-between relative">
+    <div class="max-w-7xl mx-auto w-full px-4 py-8 flex items-center justify-between relative">
       <!-- Left Links -->
       <div class="hidden md:flex space-x-8 text-sm font-jost uppercase tracking-widest">
         <router-link
