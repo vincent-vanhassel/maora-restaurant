@@ -67,32 +67,51 @@
       </button>
     </div>
 
-    <!-- Mobile Menu -->
-    <div
-      v-if="menuOpen"
-      class="md:hidden flex flex-col space-y-4 px-6 pb-6 text-sm font-jost bg-main-color text-text-color uppercase tracking-widest"
-    >
-      <router-link @click="menuOpen = false" to="/menu" class="hover:underline">{{ $t('navbar.menu') }}</router-link>
-      <router-link @click="menuOpen = false" to="/about" class="hover:underline">{{ $t('navbar.about') }}</router-link>
+<!-- Mobile Menu -->
+<div
+  v-if="menuOpen"
+  class="md:hidden flex flex-col space-y-4 px-6 pb-6 text-sm font-jost bg-main-color text-text-color uppercase tracking-widest"
+>
+  <router-link
+    @click="menuOpen = false"
+    :to="route.path !== '/menu' ? '/menu' : '/'"
+    class="hover:underline"
+  >
+    {{ route.path !== '/menu' ? $t('navbar.menu') : $t('navbar.home') }}
+  </router-link>
 
-      <a
-        href="https://bookings.zenchef.com/results?rid=374486&pid=1001"
-        class="border border-text-color bg-main-color text-text-color px-4 py-2 mt-4 text-center hover:bg-text-color hover:text-main-color"
-      >{{ $t('navbar.book') }}</a>
-      <a
-        href="#"
-        class="border border-text-color bg-main-color text-text-color px-4 py-2 text-center hover:bg-text-color hover:text-main-color"
-      >{{ $t('navbar.collect') }}</a>
+  <router-link
+    @click="menuOpen = false"
+    :to="route.path !== '/about' ? '/about' : '/'"
+    class="hover:underline"
+  >
+    {{ route.path !== '/about' ? $t('navbar.about') : $t('navbar.home') }}
+  </router-link>
 
-      <!-- Lang switch mobile -->
-      <button
-        @click="toggleLang"
-        class="flex items-center gap-2 border border-text-color text-text-color font-jost px-3 py-1 text-sm rounded hover:bg-text-color hover:text-main-color transition-all duration-200"
-      >
-        <Languages class="w-4 h-4" />
-        {{ locale === 'fr' ? 'EN' : 'FR' }}
-      </button>
-    </div>
+  <a
+    href="https://bookings.zenchef.com/results?rid=374486&pid=1001"
+    class="border border-text-color bg-main-color text-text-color px-4 py-2 mt-4 text-center hover:bg-text-color hover:text-main-color"
+  >
+    {{ $t('navbar.book') }}
+  </a>
+
+  <a
+    href="#"
+    class="border border-text-color bg-main-color text-text-color px-4 py-2 text-center hover:bg-text-color hover:text-main-color"
+  >
+    {{ $t('navbar.collect') }}
+  </a>
+
+  <!-- Lang switch mobile -->
+  <button
+    @click="toggleLang"
+    class="flex items-center gap-2 border border-text-color text-text-color font-jost px-3 py-1 text-sm rounded hover:bg-text-color hover:text-main-color transition-all duration-200"
+  >
+    <Languages class="w-4 h-4" />
+    {{ locale === 'fr' ? 'EN' : 'FR' }}
+  </button>
+</div>
+
   </nav>
 </template>
 
