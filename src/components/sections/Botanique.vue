@@ -18,6 +18,6 @@
 </template>
 
 <script setup>
-import SectionLayout from './SectionLayout.vue'
+import SectionLayout from '../layout/SectionLayout.vue'
 defineProps({ index: Number })
 </script>

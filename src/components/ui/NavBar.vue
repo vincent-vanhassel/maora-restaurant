@@ -30,7 +30,7 @@
 
       <!-- Logo centered absolutely -->
       <div class="absolute left-1/2 transform -translate-x-1/2">
-        <img src="/logo-navbar.png" alt="Logo" class="h-16" />
+        <img src="/image-ui/logo-navbar.png" alt="Logo" class="h-16" />
       </div>
 
       <!-- Right Buttons -->

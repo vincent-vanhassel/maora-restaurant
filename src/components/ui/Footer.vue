@@ -42,7 +42,7 @@
 
     <!-- Image décorative -->
     <div class="flex justify-center my-12">
-      <img src="/illustration-footer.png" alt="Illustration" class="h-64 object-contain" />
+      <img src="/image-ui/illustration-footer.png" alt="Illustration" class="h-64 object-contain" />
     </div>
 
     <!-- Bas du footer -->

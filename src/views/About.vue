@@ -33,7 +33,7 @@
         <!-- Illustration -->
         <div class="relative flex justify-center">
           <img
-            src="/about-illustration.jpg"
+            src="/image-sections/about-illustration.jpg"
             :alt="$t('about.imgAlt')"
             class="w-full max-w-md rounded-lg shadow-md object-cover"
           />
@@ -46,8 +46,8 @@
 </template>
 
 <script setup>
-import NavBar from '../components/NavBar.vue'
-import Footer from '../components/Footer.vue'
+import NavBar from '../components/ui/NavBar.vue'
+import Footer from '../components/ui/Footer.vue'
 </script>
 
 <style scoped>
