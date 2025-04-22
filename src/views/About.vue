@@ -33,7 +33,7 @@
         <!-- Illustration -->
         <div class="relative flex justify-center">
           <img
-            src="/image-sections/about-illustration.jpg"
+            src="/image-sections/about.jpg"
             :alt="$t('about.imgAlt')"
             class="w-full max-w-md rounded-lg shadow-md object-cover"
           />

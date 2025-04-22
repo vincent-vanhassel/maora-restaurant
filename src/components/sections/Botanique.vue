@@ -4,7 +4,7 @@
     :title="$t('botanique.title')"
     :description="$t('botanique.description')"
     :text="$t('botanique.text')"
-    img-src="/botanique-image.jpeg"
+    img-src="/image-sections/botanique.jpeg"
     img-alt="Plat végétal signature"
     :index="index"
     :dark="true"

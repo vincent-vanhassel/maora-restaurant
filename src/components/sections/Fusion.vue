@@ -4,7 +4,7 @@
     :title="$t('fusion.title')"
     :description="$t('fusion.description')"
     :text="$t('fusion.text')"
-    img-src="/fusion-image.jpeg"
+    img-src="/image-sections/fusion.jpeg"
     img-alt="Plat végétal signature"
     :index="index"
     :dark="true"
