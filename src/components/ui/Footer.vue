@@ -9,10 +9,10 @@
         </h3>
         <p>
           <a href="tel:+33140570022" class="block text-white no-underline hover:underline">
-            {{ $t('footer.contact.phone') }}
+            +33 1 40 57 00 22
           </a>
           <a href="mailto:contact@maorarestaurants.com" class="block text-white no-underline hover:underline">
-            {{ $t('footer.contact.email') }}
+            contact@maorarestaurants.com
           </a>
         </p>
       </div>

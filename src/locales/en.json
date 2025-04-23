@@ -30,9 +30,7 @@
   
   "footer": {
     "contact": {
-      "title": "Contact us",
-      "phone": "+33 1 40 57 00 22",
-      "email": "contact@maorarestaurants.com"
+      "title": "Contact us"
     },
     "address": {
       "title": "Address",
