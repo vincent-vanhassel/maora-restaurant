@@ -3,6 +3,7 @@
     id="Intro"
     class="h-screen flex flex-col items-center justify-center text-center px-4 text-white
            bg-[url('/image-header/maora-hero.jpeg')] bg-cover bg-center bg-no-repeat"
+            data-aos="zoom in" data-aos-delay="200" data-aos-duration="1000" data-aos-offset="200"
   >
     <!-- Logo principal -->
     <img

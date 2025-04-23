@@ -4,7 +4,7 @@
     class="py-28 px-6 md:px-20"
     :class="dark ? 'text-white' : 'text-gray-900'"
   >
-    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center relative">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center relative" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1500" data-aos-offset="200">
       
       <!-- Texte -->
       <div :class="computedReverse ? 'md:order-2' : 'md:order-1'" class="relative z-10 space-y-6">

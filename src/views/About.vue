@@ -6,7 +6,7 @@
       id="about"
       class="mt-16 py-28 px-6 md:px-20"
     >
-      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center relative">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center relative"  data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-offset="200">
         <!-- Texte -->
         <div class="relative z-10 space-y-8">
           <h2 class="text-6xl tracking-widest uppercase font-cormorant opacity-10 absolute -top-12 left-0 pointer-events-none select-none">

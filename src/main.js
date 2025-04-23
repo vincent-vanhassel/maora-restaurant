@@ -7,6 +7,9 @@ import { createI18n } from 'vue-i18n'
 import fr from './locales/fr.json'
 import en from './locales/en.json'
 
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 import './style.css'
 
 // Configuration de i18n
@@ -20,6 +23,7 @@ const i18n = createI18n({
   }
 })
 
+AOS.init()
 createApp(App)
   .use(router)
   .use(i18n)
