@@ -7,7 +7,7 @@
     <Footer />
     <NavBar />
     <a
-      href="#"
+      href="https://commandes.maorarestaurant.com"
       class="fixed bottom-6 right-6 z-50 md:hidden bg-white text-main-color font-bold text-sm px-5 py-3 rounded-full shadow-lg hover:bg-text-color hover:text-white transition duration-300"
     >
       Click & Collect
