@@ -42,7 +42,7 @@
           {{ $t('navbar.book') }}
         </a>
         <a
-          href="#"
+          href="https://commandes.maorarestaurant.com"
           class="border border-text-color bg-main-color text-text-color font-jost px-5 py-2 uppercase tracking-widest text-sm transition-all duration-200 hover:bg-text-color hover:text-main-color"
         >
           {{ $t('navbar.collect') }}
