@@ -6,7 +6,13 @@
     "collect": "Click & Collect",
     "home": "Home"
   },
-
+  "click&collect": {
+    "collect": "Order",
+    "clickCollect": "Click & Collect",
+    "delivery": "Delivery",
+    "chooseOrderMethod": "Choose an order method",
+    "close": "Close"
+  },
   "botanique": {
     "title": "botanical",
     "description": "AN ADVENTUROUS CUISINE",

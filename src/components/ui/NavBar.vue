@@ -41,12 +41,12 @@
         >
           {{ $t('navbar.book') }}
         </a>
-        <a
-          href="https://commandes.maorarestaurant.com"
+        <button
+          @click="showModal = true"
           class="border border-text-color bg-main-color text-text-color font-jost px-5 py-2 uppercase tracking-widest text-sm transition-all duration-200 hover:bg-text-color hover:text-main-color"
         >
           {{ $t('navbar.collect') }}
-        </a>
+        </button>
 
         <!-- Language Switch -->
         <button
@@ -67,52 +67,112 @@
       </button>
     </div>
 
-<!-- Mobile Menu -->
-<div
-  v-if="menuOpen"
-  class="md:hidden flex flex-col space-y-4 px-6 pb-6 text-sm font-jost bg-main-color text-text-color uppercase tracking-widest"
->
-  <router-link
-    @click="menuOpen = false"
-    :to="route.path !== '/menu' ? '/menu' : '/'"
-    class="hover:underline"
+  <!-- Mobile Menu -->
+  <div
+    v-if="menuOpen"
+    class="md:hidden flex flex-col space-y-4 px-6 pb-6 text-sm font-jost bg-main-color text-text-color uppercase tracking-widest"
   >
-    {{ route.path !== '/menu' ? $t('navbar.menu') : $t('navbar.home') }}
-  </router-link>
+    <router-link
+      @click="menuOpen = false"
+      :to="route.path !== '/menu' ? '/menu' : '/'"
+      class="hover:underline"
+    >
+      {{ route.path !== '/menu' ? $t('navbar.menu') : $t('navbar.home') }}
+    </router-link>
 
-  <router-link
-    @click="menuOpen = false"
-    :to="route.path !== '/about' ? '/about' : '/'"
-    class="hover:underline"
+    <router-link
+      @click="menuOpen = false"
+      :to="route.path !== '/about' ? '/about' : '/'"
+      class="hover:underline"
+    >
+      {{ route.path !== '/about' ? $t('navbar.about') : $t('navbar.home') }}
+    </router-link>
+
+    <a
+      href="https://bookings.zenchef.com/results?rid=374486&pid=1001"
+      class="border border-text-color bg-main-color text-text-color px-4 py-2 mt-4 text-center hover:bg-text-color hover:text-main-color"
+    >
+      {{ $t('navbar.book') }}
+    </a>
+
+    <button
+      @click="showMobileModal = true"
+      class="border border-text-color bg-main-color text-text-color px-4 py-2 text-center hover:bg-text-color hover:text-main-color"
+    >
+      {{ $t('navbar.collect') }}
+    </button>
+
+
+    <!-- Lang switch mobile -->
+    <button
+      @click="toggleLang"
+      class="flex items-center gap-2 border border-text-color text-text-color font-jost px-3 py-1 text-sm rounded hover:bg-text-color hover:text-main-color transition-all duration-200"
+    >
+      <Languages class="w-4 h-4" />
+      {{ locale === 'fr' ? 'EN' : 'FR' }}
+    </button>
+  </div>
+</nav>
+
+  <div
+    v-if="showModal"
+    class="fixed inset-0 z-50 flex items-center justify-center bg-black/30 backdrop-blur-sm"
   >
-    {{ route.path !== '/about' ? $t('navbar.about') : $t('navbar.home') }}
-  </router-link>
+    <div class="bg-white rounded-2xl p-8 space-y-6 max-w-sm w-full text-center">
+      <h2 class="text-lg font-semibold text-main-color">{{ $t('click&collect.chooseOrderMethod') }}</h2>
 
-  <a
-    href="https://bookings.zenchef.com/results?rid=374486&pid=1001"
-    class="border border-text-color bg-main-color text-text-color px-4 py-2 mt-4 text-center hover:bg-text-color hover:text-main-color"
+      <div class="flex flex-col gap-4">
+        <a
+          href="https://delicity.com/maora-restaurant-paris?type=pickup"
+          class="bg-main-color text-white py-3 rounded-lg font-semibold hover:bg-opacity-90 transition"
+        >
+          {{ $t('click&collect.clickCollect') }}
+        </a>
+        <a
+          href="https://commandes.maorarestaurant.com/order?type=delivery"
+          class="bg-main-color text-white py-3 rounded-lg font-semibold hover:bg-opacity-90 transition"
+        >
+          {{ $t('click&collect.delivery') }}
+        </a>
+      </div>
+
+      <button @click="showModal = false" class="text-sm text-gray-500 mt-4 hover:underline">
+        {{ $t('click&collect.close') }}
+      </button>
+    </div>
+  </div>
+
+  <!-- Modale mobile dans le menu responsive -->
+  <div
+    v-if="showMobileModal"
+    class="fixed inset-0 z-50 flex items-end justify-center bg-black/30 backdrop-blur-sm md:hidden"
   >
-    {{ $t('navbar.book') }}
-  </a>
+    <div class="bg-white rounded-t-2xl w-full p-6 text-center space-y-4">
+      <h2 class="text-main-color font-semibold text-base">
+        {{ $t('click&collect.chooseOrderMethod') }}
+      </h2>
 
-  <a
-    href="#"
-    class="border border-text-color bg-main-color text-text-color px-4 py-2 text-center hover:bg-text-color hover:text-main-color"
-  >
-    {{ $t('navbar.collect') }}
-  </a>
+      <a
+        href="https://delicity.com/maora-restaurant-paris?type=pickup"
+        class="block w-full bg-main-color text-white py-3 rounded-lg font-semibold hover:bg-opacity-90 transition"
+      >
+        {{ $t('click&collect.clickCollect') }}
+      </a>
+      <a
+        href="https://commandes.maorarestaurant.com/order?type=delivery"
+        class="block w-full bg-main-color text-white py-3 rounded-lg font-semibold hover:bg-opacity-90 transition"
+      >
+        {{ $t('click&collect.delivery') }}
+      </a>
 
-  <!-- Lang switch mobile -->
-  <button
-    @click="toggleLang"
-    class="flex items-center gap-2 border border-text-color text-text-color font-jost px-3 py-1 text-sm rounded hover:bg-text-color hover:text-main-color transition-all duration-200"
-  >
-    <Languages class="w-4 h-4" />
-    {{ locale === 'fr' ? 'EN' : 'FR' }}
-  </button>
-</div>
-
-  </nav>
+      <button
+        @click="showMobileModal = false"
+        class="text-sm text-gray-500 hover:underline"
+      >
+        {{ $t('click&collect.close') }}
+      </button>
+    </div>
+  </div>
 </template>
 
 <script setup>
@@ -124,6 +184,9 @@ import { Languages } from 'lucide-vue-next'
 const menuOpen = ref(false)
 const route = useRoute()
 const { locale } = useI18n()
+
+const showModal = ref(false)
+const showMobileModal = ref(false)
 
 const toggleLang = () => {
   locale.value = locale.value === 'fr' ? 'en' : 'fr'
